@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    background: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.headerCart{
+    display: flex;
+}
+.counterCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background: #FF5500;
+    border-radius: 8px;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}

@@ -1,0 +1,75 @@
+.movieCard{
+    margin-bottom: 16px;
+    padding:22px;
+    max-width: 1424px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.movieCard:hover{
+    background: #F8F8F8;
+}
+.movieCard:last-child{
+    margin-bottom: 0;
+}
+.movieCardContent{
+    max-width: 1252px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.movieCardTitleAndGenre{
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+    justify-content: space-between;
+}
+.ticketContent{
+    max-width: 68px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.ticketContent p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+.ticketButton{
+    width: 20px;
+    height: 20px;
+    background: #FF5500;
+    border-radius: 4px;
+    border: 0;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+.ticketButton:hover{
+    background: #E94E00;
+}
+.ticketButton:active{
+    background: #FF5500;
+}
+.disabled{
+    background: #FFA375;
+}
+.fullWidth {
+    max-width: none;
+  }
+.fullWidth .movieCardContent{
+    max-width: 1683px;
+}
+.closeButton {
+    width: 12.5px;
+    height: 12.5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.fullWidth .ticketContent{
+    max-width: 110px;
+    width: 100%;
+}

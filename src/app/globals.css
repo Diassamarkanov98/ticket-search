@@ -1,0 +1,50 @@
+:root {
+  --font-mono: 'Roboto';
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.block {
+  padding: 23px 32px;
+}
+
+/* My styles */
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.whiteBackground {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.root-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background: #F5F5F5;
+}
