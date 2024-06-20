@@ -1,8 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# REACT BASE
 
-First, run the development server:
+Для удобства проверки были добавлены поясняющие комментарии в конце некоторых модулей :)
+
+Перед запуском приложения установите пакеты проекта, находясь в главной директории:
+
+```bash
+npm install
+# или
+yarn install
+# или
+pnpm install
+```
+
+Команды для запуска приложения:
 
 ```bash
 npm run dev
@@ -12,23 +24,18 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в своем браузере, чтобы развернуть приложение
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Также вы можете развернуть локальный сервер, который вам нужен будет для загрузки данных(не забудьте также установить пакеты, находясь в папке simple_api):
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+Запускаем сервер командой node server.js (если из корня, то node simple_api/server.js)
+```
 
-## Learn More
+Дефолтно запускается сервер на http://localhost:3001.
 
-To learn more about Next.js, take a look at the following resources:
+**Кинотеатры**: http://localhost:3001/api/cinemas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Фильмы**: http://localhost:3001/api/movies - все фильмы http://localhost:3001/api/movies?cinemaId={айдишка кинотеатра} - фильмы в конкретном кинотеатре http://localhost:3001/api/movie?movieId={айдишка фильма} - конкретный фильм
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Отзывы**: http://localhost:3001/api/reviews - все отзывы http://localhost:3001/api/reviews?movieId={айдишка фильма} - отзывы конкретного фильма
